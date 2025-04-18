@@ -899,76 +899,84 @@ const initializeProjects = () => {
         },
         {
             id: 'proj18',
-            name: 'Manta Network',
-            shortDescription: 'Privacy-preserving blockchain',
-            description: 'Manta Network is a privacy-preserving layer for Web3 using zero-knowledge proofs.',
-            tge: 'Q1 2024',
-            funding: '$85M',
-            reward: 'Tokens',
-            type: 'L1 Blockchain',
-            isHot: false,
-            color: 'linear-gradient(135deg, #191970, #000080)',
-            tags: ['mainnet', 'privacy'],
-            socialLinks: {
-                twitter: 'https://twitter.com/mantanetwork',
-                website: 'https://manta.network/',
-                github: 'https://github.com/Manta-Network'
-            }
-        },
-        {
-            id: 'proj19',
-            name: 'Fuel',
-            shortDescription: 'Fast execution layer',
-            description: 'Fuel is a high-performance execution layer, designed from the ground up for scaling.',
-            tge: 'Q3 2024',
-            funding: '$80M',
-            reward: 'Tokens',
-            type: 'L1 Blockchain',
-            isHot: true,
-            color: 'linear-gradient(135deg, #CD5C5C, #F08080)',
-            tags: ['testnet', 'upcoming'],
-            socialLinks: {
-                twitter: 'https://twitter.com/fuellabs_',
-                website: 'https://fuel.network/',
-                github: 'https://github.com/FuelLabs'
-            }
-        },
-        {
-            id: 'proj20',
-            name: 'Sei',
-            shortDescription: 'Trading-optimized blockchain',
-            description: 'Sei is a Layer 1 blockchain optimized for trading applications.',
-            tge: 'Q3 2023',
-            funding: '$50M',
-            reward: 'Tokens',
-            type: 'L1 Blockchain',
-            isHot: false,
-            color: 'linear-gradient(135deg, #00008B, #0000FF)',
-            tags: ['mainnet', 'airdrop'],
-            socialLinks: {
-                twitter: 'https://twitter.com/SeiNetwork',
-                website: 'https://www.sei.io/',
-                github: 'https://github.com/sei-protocol'
-            }
-        },
-        {
-            id: 'proj21',
-            name: 'Polyhedra',
-            shortDescription: 'Zero-knowledge protocol',
-            description: 'Polyhedra is building a zero-knowledge privacy protocol for decentralized applications.',
-            tge: 'Q4 2024',
-            funding: '$20M',
-            reward: 'Tokens',
-            type: 'Privacy Protocol',
-            isHot: true,
-            color: 'linear-gradient(135deg, #654321, #8B4513)',
-            tags: ['testnet', 'privacy'],
-            socialLinks: {
-                twitter: 'https://twitter.com/polyhedra_zone',
-                website: 'https://polyhedra.network/',
-                github: 'https://github.com/polyhedra-network'
-            }
-        }
+const projects = [
+  {
+    id: 'proj1',
+    name: "Gradient",
+    symbol: "GDT",
+    shortDescription: "Liquid staking protocol bridging Ethereum and the Bittensor Network.",
+    description: "Gradient is a decentralized protocol focused on reshaping computing power and staking solutions. It offers interoperability between blockchain networks like Ethereum and the TAO Network through its liquid staking service. The platform aims to make computing more inclusive and affordable, particularly in an AI-driven future.",
+    tge: "2024-04-04",
+    funding: "$4.97M raised during IDO",
+    reward: "Tokens",
+    type: "DeFi / Liquid Staking",
+    isHot: true,
+    color: "linear-gradient(135deg, #FF6B6B, #FFE66D)",
+    tags: ["liquid staking", "Ethereum", "TAO Network"],
+    links: {
+      twitter: "https://twitter.com/gradientorg",
+      website: "https://gradient.org/",
+      github: "https://github.com/gradientorg"
+    }
+  },
+  {
+    id: 'proj2',
+    name: "Giza",
+    symbol: "GIZA",
+    shortDescription: "AI platform integrating machine learning with Web3 through zero-knowledge proofs.",
+    description: "Giza is an AI platform built on StarkNet, combining machine learning with Web3 through zero-knowledge proofs to enhance decentralized protocols and smart contracts. Its goal is to revolutionize sectors such as DeFi, Gaming, Security, and NFTs by addressing the limitations of traditional Web3 infrastructure.",
+    tge: "2025-01-29",
+    funding: "$3M raised during ICO",
+    reward: "Tokens",
+    type: "AI & Neural Networks",
+    isHot: true,
+    color: "linear-gradient(135deg, #3CB371, #90EE90)",
+    tags: ["AI", "machine learning", "StarkNet"],
+    links: {
+      twitter: "https://twitter.com/giza_ai",
+      website: "https://giza.ai/",
+      github: "https://github.com/giza-ai"
+    }
+  },
+  {
+    id: 'proj3',
+    name: "Dawn Protocol",
+    symbol: "DAWN",
+    shortDescription: "Open-source protocol for gaming and competitions.",
+    description: "Dawn Protocol is an open-source protocol for gaming and competitions. Its mission is to enable a fair, open, and rewarding gaming ecosystem, allowing players, businesses, and influencers to run competitions and earn cryptocurrencies on video games using Dawn.",
+    tge: "2020-05-27",
+    funding: "Not specified",
+    reward: "Tokens",
+    type: "Gaming / eSports",
+    isHot: false,
+    color: "linear-gradient(135deg, #6A5ACD, #9370DB)",
+    tags: ["gaming", "eSports", "competitions"],
+    links: {
+      twitter: "https://twitter.com/dawnprotocol",
+      website: "https://dawn.org/",
+      github: "https://github.com/dawnprotocol"
+    }
+  },
+  {
+   id: 'proj4',
+   name: "Grass",
+    symbol: "GRASS",
+    shortDescription: "Monetize unused network resources by selling your 'view of the internet.'",
+    description: "Grass, the flagship product of Wynd Network, revolutionizes internet connectivity by enabling users to monetize their unused network resources. With Grass, individuals can sell their 'view of the internet,' allowing others to access public web data in exchange for payment in the protocol's native token.",
+    tge: "Not specified",
+    funding: "Not specified",
+    reward: "Tokens",
+    type: "Blockchain Service",
+    isHot: true,
+    color: "linear-gradient(135deg, #4682B4, #87CEEB)",
+    tags: ["network monetization", "data sharing"],
+    links: {
+      twitter: "https://twitter.com/grassnetwork",
+      website: "https://grass.io/",
+      github: "https://github.com/grassnetwork"
+    }
+  }
+];
     ];
     
     state.projects = defaultProjects;
