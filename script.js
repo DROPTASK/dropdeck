@@ -501,6 +501,9 @@ const updateMyProjects = () => {
     });
 };
 
+
+// ... keep existing code before updateExplore function
+
 // Update explore tab content
 const updateExplore = () => {
     const container = $('exploreProjectsGrid');
@@ -532,6 +535,8 @@ const updateExplore = () => {
         });
     });
 };
+
+// ... keep existing code after updateExplore function
 
 // Function to update news tab
 const updateNews = () => {
